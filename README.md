@@ -1,17 +1,17 @@
-# Exemplo de criação instancia EC2 com terraform
-Este exemplo cria uma instancia EC2 com terraform.
+# Exemplo de criação instância EC2 com terraform
+Este exemplo cria uma instância EC2 com terraform.
 Este processo inclui:
-- Arquivo de credentials (obsoleta, mas funcional)
-- Utilização da VPC default criado pela AWS
-- Criação de Security group personalizado
-- Utilização de *user-data* através de um script shell (bootstrap.sh), que irá efetuar alguns comandos e instalação do APACHE após a criação da instância
+- Arquivo de credentials (obsoleta, mas funcional);
+- Utilização da VPC default criado pela AWS;
+- Criação de Security Group personalizado;
+- Utilização de *user-data* através de um script shell (bootstrap.sh), que irá efetuar alguns comandos e instalação do APACHE após a criação da instância.
 
 # Executando
 Primeiramente será necessário inserir os seguintes valores nos arquivos:
-- Suas credenciais AWS no arquivo '.credentials'
-- O nome da sua chave SSH no arquivo 'instance.tf' na tag *key_name*
+- Suas credenciais AWS no arquivo `.credentials`
+- O nome da sua chave SSH no arquivo `instance.tf` na tag *key_name*
 
-Feito isso, efetuar o git clone, ou copiar manualmente os códigos deste repositório e executar os comandos terraform:
+Feito isso, efetuar o git clone, ou copiar manualmente os códigos deste repositório, e executar os comandos terraform:
 ```
 terraform init
 terraform plan
