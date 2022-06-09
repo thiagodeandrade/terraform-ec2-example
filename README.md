@@ -9,7 +9,7 @@ Este processo inclui:
 # Executando
 Primeiramente será necessário inserir os seguintes valores nos arquivos:
 - Suas credenciais AWS no arquivo `.credentials`
-- O nome da sua chave SSH no arquivo `instance.tf` na tag *key_name*
+- O nome da sua chave SSH no arquivo `instance.tf` na tag `key_name=`
 
 Feito isso, efetuar o git clone, ou copiar manualmente os códigos deste repositório, e executar os comandos terraform:
 ```
