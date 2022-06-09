@@ -1,3 +1,4 @@
+# Aqui definimos um SecurityGroup que terá o acesso de qualquer lugar para porta 22 e 80
 resource "aws_security_group" "allow_services" {
   name        = "allow_services"
   description = "Allow Services"
@@ -32,6 +33,6 @@ resource "aws_security_group" "allow_services" {
   }
 }
 
-output "aws_security_group" {
-  value = aws_security_group.allow_services.id
-}
+#output "aws_security_group" {
+#  value = aws_security_group.allow_services.id
+#}
